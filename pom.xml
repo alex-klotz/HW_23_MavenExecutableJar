@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>core</groupId>
-  <artifactId>HW_23_MavenExecutableJar</artifactId>
+  <artifactId>HW_24_MavenLocalRepository</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
-  <name>HW_23_MavenExecutableJar</name>
+  <name>HW_24_MavenLocalRepository</name>
   <url>http://maven.apache.org</url>
   <dependencies>
    <dependency>
@@ -14,23 +14,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+   <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>3.11.0</version>
+   </dependency>
   </dependencies>
-  <build>
-    <plugins>
-      <plugin>
-     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.0.2</version>
-        <configuration>
-          <archive>
-            <manifest>
-              <mainClass>core.App</mainClass>
-            </manifest>
-          </archive>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>
    
